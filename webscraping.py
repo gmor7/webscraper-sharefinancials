@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup,NavigableString
 import re
 #print(result.status_code)    # checks if webpage accessible. prints http status code. 400 code = not accessible. 200 code = accessible. Ours is 200.
-#print(result.headers)  # info re what's on homepage to use for basicfinancials function
+#print(result.headers)  # info re what's on homepage to use for ataglance_financials function
 
 def ataglance_financials(webaddress, sharename):
     result = requests.get(webaddress)
